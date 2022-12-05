@@ -22,6 +22,7 @@ class _DiceappState extends State<Diceapp> {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w900,
+            fontSize: 35,
           ),
         ),
         backgroundColor: Colors.black,
@@ -32,10 +33,8 @@ class _DiceappState extends State<Diceapp> {
         child: InkWell(
           onTap: () {
             setState(() {
-              rightnumber = Random().nextInt(7);
-            });
-            setState(() {
               leftnumber = Random().nextInt(7);
+              rightnumber = Random().nextInt(7);
             });
           },
           child: Row(
